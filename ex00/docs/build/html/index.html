@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Welcome to Voight-Kampff’s documentation! &#8212; Voight-Kampff 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-voight-kampff-s-documentation">
+<h1>Welcome to Voight-Kampff’s documentation!<a class="headerlink" href="#welcome-to-voight-kampff-s-documentation" title="Permalink to this heading">¶</a></h1>
+<p><strong>Voight-Kampff</strong> is a Python test which define “replicants”.</p>
+<p>Lore: <a class="reference external" href="https://bladerunner.fandom.com/wiki/Voight-Kampff_test/">Open Blade Runner Database</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This project is under active development.</p>
+</div>
+</section>
+<section id="about-version">
+<h1>About version<a class="headerlink" href="#about-version" title="Permalink to this heading">¶</a></h1>
+<p><strong>EX00</strong> is an old version of test. This version of the test with strict restrictions, without input json and pytest support. But, in contrast of ex01,  it makes a history about participants.</p>
+</section>
+<section id="instructions">
+<h1>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">¶</a></h1>
+<ol class="arabic simple">
+<li><p>Go to the main directory</p></li>
+<li><p>Run ‘python main.py’</p></li>
+<li><p>Follow the instructions</p></li>
+</ol>
+<p>At the main part of test you will need to collect an anamnesis about the participant after each question answered by him.
+Than you will get a final decision.</p>
+</section>
+<section id="module-tests.analysis_tests">
+<span id="file-with-test-cases"></span><h1>File with test cases:<a class="headerlink" href="#module-tests.analysis_tests" title="Permalink to this heading">¶</a></h1>
+<p>This file contains buisness logic.
+Here you may find test cases for each person.</p>
+<p>…
+:param age: contains the number of answer for question about age
+:type age: int
+:param money: contains the number of answer for question about money
+:type money: int
+:param mood: contains the number of answer for question about mood
+:type mood: int
+:param death: contains the number of answer for question about death
+:type death: int
+:param sex: contains the number of answer for question about sex
+:type sex: int
+:param condition: contains changing of person condition
+:type condition: list</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.analysis_tests.test_age">
+<span class="sig-prename descclassname"><span class="pre">tests.analysis_tests.</span></span><span class="sig-name descname"><span class="pre">test_age</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">age</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.analysis_tests.test_age" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that old people started breath more often on question about sex</p>
+<p>…
+:param age: contains the number of answer for question about age
+:type age: int
+:param condition: contains changing of person condition
+:type condition: list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.analysis_tests.test_money">
+<span class="sig-prename descclassname"><span class="pre">tests.analysis_tests.</span></span><span class="sig-name descname"><span class="pre">test_money</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">money</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.analysis_tests.test_money" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that heart of angry people started moving faster</p>
+<p>…
+:param money: contains the number of answer for question about money
+:type money: int
+:param condition: contains changing of person condition
+:type condition: list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.analysis_tests.test_mood">
+<span class="sig-prename descclassname"><span class="pre">tests.analysis_tests.</span></span><span class="sig-name descname"><span class="pre">test_mood</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mood</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">death</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.analysis_tests.test_mood" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that people who always thinking about death not feeling “awesome”.</p>
+<p>…
+:param mood: contains the number of answer for question about mood
+:type mood: int
+:param condition: contains changing of person condition
+:type condition: list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.analysis_tests.test_president">
+<span class="sig-prename descclassname"><span class="pre">tests.analysis_tests.</span></span><span class="sig-name descname"><span class="pre">test_president</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">condition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.analysis_tests.test_president" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that people not worried too much on question about president.</p>
+<p>…
+:param condition: contains changing of person condition
+:type condition: list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.analysis_tests.test_sex">
+<span class="sig-prename descclassname"><span class="pre">tests.analysis_tests.</span></span><span class="sig-name descname"><span class="pre">test_sex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.analysis_tests.test_sex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks that people with pair started blushing on questing about sex
+after question about his boy/girl/hs/wf.</p>
+<p>…
+:param sex: contains the number of answer for question about sex
+:type sex: int
+:param condition: contains changing of person condition
+:type condition: list</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Voight-Kampff</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Deckard.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.1.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
