@@ -1,8 +1,6 @@
 """
-test_person.py
-====================================
-Main test cases of this project.
-Upload information about person from json and check it.
+Main test cases
+================
 """
 
 

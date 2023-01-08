@@ -25,8 +25,6 @@ Instructions
 At the main part of test you will need to collect an anamnesis about the participant after each question answered by him.
 Than you will get a results of tests and final decision.
 
-Tests (Autodoc):
-=====================
 
 .. automodule:: tests.for_docs
  :members:
