@@ -2,10 +2,14 @@
 This file collecting person conditions.
 """
 
+from random import randint
+
 
 def respiration():
     """Here we collect and validate the respiration"""
     val = input("Please enter the respiration bpm: ")
+    if val == "":
+        val = str(randint(10, 30))
     if not val.isdigit():
         print("It must be integer.")
         return respiration()
@@ -18,6 +22,8 @@ def respiration():
 def heart_rate():
     """Here we collect and validate the heart rate"""
     val = input("Please enter the heart bpm: ")
+    if val == "":
+        val = str(randint(40, 200))
     if not val.isdigit():
         print("It must be integer.")
         return heart_rate()
@@ -30,6 +36,8 @@ def heart_rate():
 def blushing_level():
     """Here we collect and validate the blushing level"""
     val = input("Please enter the blushing level: ")
+    if val == "":
+        val = str(randint(1, 6))
     if not val.isdigit():
         print("It must be integer.")
         return blushing_level()
@@ -42,6 +50,8 @@ def blushing_level():
 def pupillary_dilation():
     """Here we collect and validate the pupillary dilation"""
     val = input("Please enter the pupillary dilation: ")
+    if val == "":
+        val = str(randint(2, 8))
     if not val.isdigit():
         print("It must be integer.")
         return pupillary_dilation()
