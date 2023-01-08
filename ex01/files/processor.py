@@ -1,13 +1,20 @@
+"""
+Here we ask questions, get the answers
+and collect the conditions person.
+"""
+
 from files.anamnesis import get_anamnesis
 from files.analisis import analysis
 import random
 
 
-def get_answer(answers):
+def get_answer(answers) -> int:
+    """Randomly return the digit of answer"""
     return random.choice(answers)
 
 
 def testing(qa: dict) -> str:
+    """Create the process of whole test"""
     digits_answ = []
     condition = []
 

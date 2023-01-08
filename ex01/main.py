@@ -1,6 +1,4 @@
 """
-main.py
-===============
 This is a start point.
 """
 from files.processor import testing

@@ -1,4 +1,10 @@
+"""
+This file collecting person conditions.
+"""
+
+
 def respiration():
+    """Here we collect and validate the respiration"""
     val = input("Please enter the respiration bpm: ")
     if not val.isdigit():
         print("It must be integer.")
@@ -10,6 +16,7 @@ def respiration():
 
 
 def heart_rate():
+    """Here we collect and validate the heart rate"""
     val = input("Please enter the heart bpm: ")
     if not val.isdigit():
         print("It must be integer.")
@@ -21,6 +28,7 @@ def heart_rate():
 
 
 def blushing_level():
+    """Here we collect and validate the blushing level"""
     val = input("Please enter the blushing level: ")
     if not val.isdigit():
         print("It must be integer.")
@@ -32,6 +40,7 @@ def blushing_level():
 
 
 def pupillary_dilation():
+    """Here we collect and validate the pupillary dilation"""
     val = input("Please enter the pupillary dilation: ")
     if not val.isdigit():
         print("It must be integer.")
@@ -43,6 +52,7 @@ def pupillary_dilation():
 
 
 def get_anamnesis():
+    """This function enter values to dict"""
     anamnesis = {}
 
     anamnesis["respiration"] = respiration()
