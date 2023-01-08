@@ -85,7 +85,7 @@ class Anamnesis(BaseModel):
         Value Error
             If heart rate more or less than human heart can.
         """
-        if not 40 < hr < 200:
+        if not 40 <= hr <= 200:
             raise ValueError("Invalid heart rate.\
                 Should be more than 40 and less than 200")
         if hr < 60 or hr > 100:
@@ -133,7 +133,7 @@ class Anamnesis(BaseModel):
         Value Error
             If pupillary dilation more or less than exist
         """
-        if not 2 < pd < 9:
+        if not 2 <= pd <= 9:
             raise ValueError("Invalid pupillary dilation.\
                 Should be more than 2 and less than 9")
         if pd < 4 or pd > 6:

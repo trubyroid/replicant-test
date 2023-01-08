@@ -24,7 +24,7 @@ def analysis(condition: list, answers: list):
     money = answers[4]
     sex = answers[6]
     mood = answers[9]
-    score = 1
+    score = 0
 
     score += test_age(age, condition)
     score += test_money(money, condition)

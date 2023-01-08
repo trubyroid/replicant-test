@@ -101,4 +101,4 @@ def test_president(condition):
     """
     if (condition[8].heart_rate == 150):
         return -5
-    return 1
+    return 0
