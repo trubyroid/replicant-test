@@ -1,0 +1,60 @@
+{
+    "How old are you?": {
+      "1": "Child",
+      "2": "Teen",
+      "3": "Adult",
+      "4": "Old"
+    },
+    "How often do you think about death?": {
+      "1": "Never",
+      "2": "Not so often",
+      "3": "Sometimes",
+      "4": "Yes"
+    },
+    "Are you living with your parents?": {
+      "1": "Yes",
+      "2": "No",
+      "3": "Hard to explain"
+    },
+    "Do you work?": {
+      "1": "Yes",
+      "2": "No, I'm studying",
+      "3": "I'm looking for a job"
+    },
+    "How much money do you have?": {
+      "1": "Not your business",
+      "2": "A lot of",
+      "3": "A little",
+      "4": "Not enough"
+    },
+    "What about relationships?": {
+      "1": "Husband/wife",
+      "2": "Boy/Girl",
+      "3": "Looking for",
+      "4": "No"
+    },
+    "Do you have sex?": {
+      "1": "For sure",
+      "2": "Rarely",
+      "3": "No",
+      "4": "Too young/old for this"
+    },
+    "What do your parents do?": {
+      "1": "Working",
+      "2": "Resting",
+      "3": "I don't know",
+      "4": "They're dead"
+    },
+    "Does your president make a lot of wrong decisions?": {
+      "1": "For sure",
+      "2": "No",
+      "3": "Not so much",
+      "4": "I refuse to answer"
+    },
+    "How are you?": {
+      "1": "Awesome",
+      "2": "Fine",
+      "3": "So so",
+      "4": "Bad"
+    }
+}
