@@ -7,4 +7,5 @@ If you will don't answer or insert the parameters, random variant will be chosen
 
 Clone repo and enter "python3 main.py" to go through the test.
 
-In this project I studyed PyTest and Sphinx
+In this project I studyed PyTest and Sphinx.  
+You will find tests in /tests and documentation in /docs/builded/html/index.html
