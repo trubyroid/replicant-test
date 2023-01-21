@@ -1,5 +1,6 @@
 # replicant-test
-Here I studying PyTest and Sphinx.
+Here I studying PyTest and Sphinx
+=================================
 
 This is an implementation of Voight-Kampff test from "Blade Runner" universe.
 There is ten questions which you may answer and four parameters, which you need to enter after each question.
