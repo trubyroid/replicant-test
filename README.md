@@ -1,4 +1,3 @@
-# replicant-test
 In this project I studying PyTest and Sphinx
 
 This is an implementation of **Voight-Kampff** test from "Blade Runner" universe.
