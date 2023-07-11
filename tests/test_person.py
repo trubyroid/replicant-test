@@ -9,51 +9,51 @@ import pytest
 
 
 @pytest.mark.usefixtures("get_info")
-def test_sex(self):
+def test_sex(get_info):
     """Checks that people blushing on talks about relationships"""
-    if self.answers[5] == '1' or self.answers[5] == '2':
-        assert int(self.condition[6]["blushing level"]) - \
-            int(self.condition[5]["blushing level"]) > 1
+    if get_info.answers[5] == '1' or get_info.answers[5] == '2':
+        assert int(get_info.condition[6]["blushing level"]) - \
+            int(get_info.condition[5]["blushing level"]) > 1
 
 
 @pytest.mark.usefixtures("get_info")
-def test_death(self):
+def test_death(get_info):
     """Checks that old people fear the death"""
-    if self.answers[0] == '4':
-        assert int(self.condition[1]["heart rate"]) - \
-            int(self.condition[0]["heart rate"]) > 5
+    if get_info.answers[0] == '4':
+        assert int(get_info.condition[1]["heart rate"]) - \
+            int(get_info.condition[0]["heart rate"]) > 5
 
 
 @pytest.mark.usefixtures("get_info")
-def test_parents(self):
+def test_parents(get_info):
     """Checks that people don't live with dead parents"""
-    if self.answers[2] == '1':
-        assert self.answers[7] != '4'
+    if get_info.answers[2] == '1':
+        assert get_info.answers[7] != '4'
 
 
 @pytest.mark.usefixtures("get_info")
-def test_work(self):
+def test_work(get_info):
     """Checks that people who loooking for job don't be richy"""
-    if self.answers[3] == '3':
-        assert self.answers[4] != '4'
+    if get_info.answers[3] == '3':
+        assert get_info.answers[4] != '4'
 
 
 @pytest.mark.usefixtures("get_info")
-def test_money(self):
+def test_money(get_info):
     """Checks that heart of angry people started moving faster"""
-    if self.answers[4] == '1':
-        assert int(self.condition[4]["heart rate"]) - \
-            int(self.condition[3]["heart rate"]) > 10
+    if get_info.answers[4] == '1':
+        assert int(get_info.condition[4]["heart rate"]) - \
+            int(get_info.condition[3]["heart rate"]) > 10
 
 
 @pytest.mark.usefixtures("get_info")
-def test_condition(self):
+def test_condition(get_info):
     """Checks that people with bad mood don't have a large pupils"""
-    if self.answers[9] == '4':
-        assert int(self.condition[9]["pupillary dilation"]) < 6
+    if get_info.answers[9] == '4':
+        assert int(get_info.condition[9]["pupillary dilation"]) < 6
 
 
 @pytest.mark.usefixtures("get_info")
-def test_president(self):
+def test_president(get_info):
     """Checks that people not worried too much on question about president"""
-    assert int(self.condition[8]["heart rate"]) < 125
+    assert int(get_info.condition[8]["heart rate"]) < 125
