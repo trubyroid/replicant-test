@@ -5,57 +5,55 @@ Main test cases of this project.
 Upload information about person from json and check it.
 """
 
-import json
+import pytest
 
 
-file = open("./json/answers.json")
-answers = json.load(file)
-file.close()
-
-file = open("./json/condition.json")
-condition = json.load(file)
-file.close()
-
-
-def test_sex():
+@pytest.mark.usefixtures("get_info")
+def test_sex(self):
     """Checks that people blushing on talks about relationships"""
-    if (answers[5] == '1' or answers[5] == '2'):
-        assert int(condition[6]["blushing level"]) - \
-            int(condition[5]["blushing level"]) > 1
+    if self.answers[5] == '1' or self.answers[5] == '2':
+        assert int(self.condition[6]["blushing level"]) - \
+            int(self.condition[5]["blushing level"]) > 1
 
 
-def test_death():
+@pytest.mark.usefixtures("get_info")
+def test_death(self):
     """Checks that old people fear the death"""
-    if (answers[0] == '4'):
-        assert int(condition[1]["heart rate"]) - \
-            int(condition[0]["heart rate"]) > 5
+    if self.answers[0] == '4':
+        assert int(self.condition[1]["heart rate"]) - \
+            int(self.condition[0]["heart rate"]) > 5
 
 
-def test_parents():
+@pytest.mark.usefixtures("get_info")
+def test_parents(self):
     """Checks that people don't live with dead parents"""
-    if (answers[2] == '1'):
-        assert answers[7] != '4'
+    if self.answers[2] == '1':
+        assert self.answers[7] != '4'
 
 
-def test_work():
+@pytest.mark.usefixtures("get_info")
+def test_work(self):
     """Checks that people who loooking for job don't be richy"""
-    if (answers[3] == '3'):
-        assert answers[4] != '4'
+    if self.answers[3] == '3':
+        assert self.answers[4] != '4'
 
 
-def test_money():
+@pytest.mark.usefixtures("get_info")
+def test_money(self):
     """Checks that heart of angry people started moving faster"""
-    if (answers[4] == '1'):
-        assert int(condition[4]["heart rate"]) - \
-            int(condition[3]["heart rate"]) > 10
+    if self.answers[4] == '1':
+        assert int(self.condition[4]["heart rate"]) - \
+            int(self.condition[3]["heart rate"]) > 10
 
 
-def test_condition():
+@pytest.mark.usefixtures("get_info")
+def test_condition(self):
     """Checks that people with bad mood don't have a large pupils"""
-    if (answers[9] == '4'):
-        assert int(condition[9]["pupillary dilation"]) < 6
+    if self.answers[9] == '4':
+        assert int(self.condition[9]["pupillary dilation"]) < 6
 
 
-def test_president():
+@pytest.mark.usefixtures("get_info")
+def test_president(self):
     """Checks that people not worried too much on question about president"""
-    assert int(condition[8]["heart rate"]) < 125
+    assert int(self.condition[8]["heart rate"]) < 125
