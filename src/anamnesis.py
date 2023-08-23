@@ -9,7 +9,7 @@ def respiration():
     """Here we collect and validate the respiration"""
     val = input("Please enter the respiration bpm: ")
     if val == "":
-        val = str(randint(10, 30))
+        val = str(randint(11, 29))
     if not val.isdigit():
         print("It must be integer.")
         return respiration()
@@ -23,11 +23,11 @@ def heart_rate():
     """Here we collect and validate the heart rate"""
     val = input("Please enter the heart bpm: ")
     if val == "":
-        val = str(randint(40, 200))
+        val = str(randint(41, 199))
     if not val.isdigit():
         print("It must be integer.")
         return heart_rate()
-    if int(val) < 40 or int(val) > 200:
+    if not 40 < int(val) < 200:
         print("Heart rate must be less than 200 and more than 40.")
         return heart_rate()
     return val
@@ -55,8 +55,8 @@ def pupillary_dilation():
     if not val.isdigit():
         print("It must be integer.")
         return pupillary_dilation()
-    if int(val) < 2 or int(val) > 8:
-        print("Pupillary dilation must be less than 8 and more than 2.")
+    if not 1 < int(val) < 9:
+        print("Pupillary dilation must be less than 9 and more than 1.")
         return pupillary_dilation()
     return val
 

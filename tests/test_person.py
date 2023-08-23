@@ -26,7 +26,7 @@ def test_parents(answers):
 
 
 def test_work(answers):
-    """Checks that people who loooking for job don't be richy"""
+    """Checks that people who loooking for a job don't be richy"""
     if answers[3] == '3':
         assert answers[4] != '4'
 
@@ -45,5 +45,5 @@ def test_condition(answers, condition):
 
 
 def test_president(condition):
-    """Checks that people not worried too much on question about the president"""
+    """Checks that people not worried too much on a question about president"""
     assert int(condition[8]["heart rate"]) < 125

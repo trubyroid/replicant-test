@@ -3,8 +3,8 @@ Here we ask questions, get the answers
 and collect the conditions person.
 """
 
-from files.anamnesis import get_anamnesis
-from files.analisis import analysis
+from src.anamnesis import get_anamnesis
+from src.analisis import analysis
 import random
 import json
 

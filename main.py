@@ -1,8 +1,8 @@
 """
 This is a start point.
 """
-from files.processor import testing
-from files.pars import parsing
+from src.processor import testing
+from src.pars import parsing
 from time import sleep
 
 
